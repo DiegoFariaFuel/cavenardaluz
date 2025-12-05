@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Caverna da Luz — Web (HTML + JS)</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="overlay-menu" class="overlay">
+    <h1>Caverna da Luz</h1>
+    <p>Coleta 3 cristais. Use WASD / setas. L liga/desliga a lanterna.</p>
+    <div class="btns">
+      <button id="btn-start">Iniciar</button>
+      <button id="btn-help">Como jogar</button>
+      <button id="btn-credits">Créditos</button>
+    </div>
+    <div id="help" class="hidden">
+      <h3>Controles</h3>
+      <ul>
+        <li>W/A/S/D ou ↑←↓→: mover</li>
+        <li>L: alternar lanterna</li>
+        <li>Esc: pausar</li>
+      </ul>
+    </div>
+    <div id="credits" class="hidden">
+      <p>Implementação em HTML/JS — equivalente para entrega da disciplina.</p>
+    </div>
+  </div>
+
+  <canvas id="game-canvas" width="1000" height="700"></canvas>
+
+  <div id="hud">
+    <div id="score">Cristais: 0 / 3</div>
+    <div id="timer">00:00.00</div>
+    <div id="battery">Lanterna: 100%</div>
+  </div>
+
+  <div id="message" class="hidden"></div>
+
+<script src="main.js"></script>
+</body>
+</html>

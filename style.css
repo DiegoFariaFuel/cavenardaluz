@@ -1,0 +1,21 @@
+:root{
+    --bg:#0b0f17;
+    --panel: rgba(0,0,0,0.45);
+    --accent: #83f0ff;
+    --text:#eaf6ff;
+  }
+  html,body{height:100%;margin:0;background:var(--bg);font-family:Inter,Segoe UI,Arial;}
+  .overlay{
+    position: absolute; inset: 0; display:flex; flex-direction:column; align-items:center; justify-content:center;
+    color:var(--text); background: linear-gradient(180deg, rgba(0,0,0,0.45), rgba(0,0,0,0.6));
+    z-index:20;
+  }
+  .overlay h1{font-size:40px;margin:0 0 8px;}
+  .btns{margin-top:12px;}
+  .btns button{padding:10px 18px;margin:6px;border-radius:8px;border:0;background:var(--accent);color:#002;cursor:pointer;font-weight:600}
+  .hidden{display:none}
+  #game-canvas{display:block;margin:0 auto; background:linear-gradient(#0b1220,#06080b); box-shadow: 0 8px 40px rgba(0,0,0,0.7); position:relative; z-index:1; margin-top:20px;}
+  #hud{position:absolute; top:12px; left:12px; color:var(--text); z-index:15; font-size:18px; text-shadow:0 1px 2px rgba(0,0,0,0.7);}
+  #hud > div{background:var(--panel); padding:6px 10px; border-radius:8px; margin-bottom:6px;}
+  #message{position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); z-index:30; background:rgba(0,0,0,0.7); color:var(--accent); padding:20px 28px; border-radius:14px; font-size:28px;}
+  
