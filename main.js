@@ -1,6 +1,6 @@
 // main.js
 // Caverna da Luz — HTML5 Canvas implementation
-// Autor: gerado por ChatGPT — adaptar conforme necessário
+
 
 /* === Configurações principais === */
 const CANVAS_W = 1000, CANVAS_H = 700;
